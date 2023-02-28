@@ -298,9 +298,12 @@ img, svg custom {
                             Fluid–Structure Interaction (FSI) is the interaction of a movable or deformable structure with an internal or surrounding fluid flow. Such interactions can be stable or oscillatory. FSI modeling is highly challenging, especially when the objects are thin and include large-scale deformations. Some common engineering applications involving FSI are predicting aeroelastic vibrations, design of parachutes, flow in microfluidic devices, biomechanics of urinary bladder & heart chamber and studying arterial stenosis & aneurysms. At Michigan State, we strive to study the biophysical modeling in active cardiac chambers to better investigate cardiac diseases and conditions.
                             <br><br>
                             <div class="row">                           
-                                  <div class="col-md-12 myformula111" style="text-align: center;">
+                                  <div class="col-md-7 myformula111" style="text-align: center;">
+                                      <img src="assets/img/2.1.gif" class="responsive"  alt="Images"  style="width:72%">
+                                  </div>
+				  <div class="col-md-5 myformula111" style="text-align: center;">
                                       <img src="assets/img/3.3.gif" class="responsive"  alt="Images"  style="width:72%">
-                                  </div>                            
+                                  </div>  
                               </div>
 
                             <br>I have developed a Fictitious Domain (FD) algorithm using stabilized Finite Element Method (FEM) to perform large-scale biophysical FSI simulations with heat transfer. The code effectively scales well up to 40 mi elements on high performance clusters. The key idea of the FD method is to virtually extend the fluid domain into the solid, where a distribution of pseudo body forces is employed to enforce structural movement through Lagrange multipliers. The fluid is solved on a fixed Eulerain grid whereas the solid deformation is computed on a flexible lagrangian grid. This significantly lowers computational expense by avoiding temporal remeshing. As shown here, physical benchmark validations are performed to validate the solver.
